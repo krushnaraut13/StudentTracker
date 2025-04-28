@@ -5,26 +5,29 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .form-container {
-            margin-top: 80px;
-            padding: 40px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #007bff;
-        }
-        a {
-            display: block;
-            margin-top: 20px;
-            text-align: center;
-        }
+    body {
+        background-color: #f8f9fa;
+    }
+    .form-container {
+        margin-top: 80px;
+        padding: 40px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #007bff;
+    }
+    a {
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none; /* <-- This removes underline */
+    }
+</style>
+    
     </style>
 </head>
 
