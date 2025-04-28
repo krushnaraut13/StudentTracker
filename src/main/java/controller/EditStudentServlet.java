@@ -16,11 +16,14 @@ public class EditStudentServlet extends HttpServlet {
             throws ServletException, IOException {
         try {
             int id = Integer.parseInt(request.getParameter("id"));
+            
             StudentService service = new StudentService();
             Student student = service.getStudentById(id);
-            request.setAttribute("student", student);
+            
+            request.setAttribute("student1", student);
             RequestDispatcher rd = request.getRequestDispatcher("editStudent.jsp");
             rd.forward(request, response);
+        
         } catch (Exception e) {
             e.printStackTrace();
         }

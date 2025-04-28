@@ -9,7 +9,7 @@ public class StudentDAO {
     private Connection getConnection() throws Exception {
     	Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(
-            "jdbc:mysql://localhost:3306/studentdb?useSSL=false", "root", "2024");
+            "jdbc:mysql://localhost:3306/studentdb1?useSSL=false", "root", "2024");
     }
 
     public void saveStudent(String name, String email) throws Exception {
@@ -64,10 +64,12 @@ public class StudentDAO {
     }
 
     public void deleteStudent(int id) throws Exception {
+        boolean rowDeleted = false;
         Connection con = getConnection();
         String sql = "DELETE FROM student WHERE id=?";
         PreparedStatement ps = con.prepareStatement(sql);
         ps.setInt(1, id);
+        rowDeleted = ps.executeUpdate() > 0;
         ps.executeUpdate();
     }
 }

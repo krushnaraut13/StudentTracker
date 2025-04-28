@@ -34,7 +34,7 @@
             
             <form action="updatestudent" method="post">
                 <%
-                    Student s = (Student) request.getAttribute("student");
+                    Student s = (Student) request.getAttribute("student1");
                 %>
                 <input type="hidden" name="id" value="<%=s.getId()%>" />
 

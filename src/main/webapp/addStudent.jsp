@@ -49,7 +49,7 @@
                 </div>
             </form>
 
-            <a href="viewStudents.jsp" class="btn btn-link">View All Students</a>
+            <a href="viewstudents" class="btn btn-link">View All Students</a>
         </div>
     </div>
 </div>
